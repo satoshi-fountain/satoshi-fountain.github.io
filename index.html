@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-adsense-account" content="ca-pub-5929163134423712">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Faucet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        .ad-container {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Crypto Faucet</h1>
+    <div class="ad-container">
+        <!-- Google AdSense Ad Unit -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_AD_CLIENT_ID"
+         crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-YOUR_AD_CLIENT_ID"
+             data-ad-slot="YOUR_AD_SLOT_ID"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    <button onclick="claimReward()">Claim Reward</button>
+    <p id="reward-message"></p>
+
+    <script>
+        function claimReward() {
+            document.getElementById('reward-message').innerText = 'You have claimed 100 satoshis!';
+        }
+    </script>
+</body>
+</html>
