@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-adsense-account" content="ca-pub-5929163134423712">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Faucet</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="google-adsense-account" content="ca-pub-5929163134423712">
 </head>
 <body>
     <h1>Welcome to Fountain of Satoshis</h1>
+    <nav>
+        <a href="./index.html">Home</a> |
+        <a href="./dice-game.html">Dice Game</a> |
+        <a href="./calculator.html">Calculator</a>
+    </nav>
     <button onclick="claimReward()">Claim Reward</button>
     <p id="reward-message"></p>
-    <img src="./images/foutain.webp" alt="Reward Image" style="margin-top: 20px;">
+    <img src="./images/fountain.webp" alt="Reward Image" style="margin-top: 20px;">
 
     <div class="ad-container">
         <!-- Google AdSense Ad Unit -->
@@ -28,22 +33,7 @@
         </script>
     </div>
 
-    <div class="calculator">
-        <h2>Satoshi/Bitcoin to USD Calculator</h2>
-        <input type="number" id="amount" placeholder="Enter amount in Satoshi or Bitcoin">
-        <select id="unit">
-            <option value="satoshi">Satoshi</option>
-            <option value="bitcoin">Bitcoin</option>
-        </select>
-        <button onclick="calculate()">Calculate</button>
-        <div id="result"></div>
-    </div>
-
-    <div class="calculator">
-        <h2>Live Bitcoin Price</h2>
-        <div id="live-price"></div>
-    </div>
-
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

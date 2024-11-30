@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satoshi/Bitcoin to USD Calculator</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5929163134423712"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Satoshi/Bitcoin to USD Calculator</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="dice-game.html">Dice Game</a> |
+        <a href="calculator.html">Calculator</a>
+    </nav>
+    <div class="calculator">
+        <h2>Satoshi/Bitcoin to USD Calculator</h2>
+        <input type="number" id="amount" placeholder="Enter amount in Satoshi or Bitcoin">
+        <select id="unit">
+            <option value="satoshi">Satoshi</option>
+            <option value="bitcoin">Bitcoin</option>
+        </select>
+        <button onclick="calculate()">Calculate</button>
+        <div id="result"></div>
+    </div>
+
+    <div class="calculator">
+        <h2>Live Bitcoin Price</h2>
+        <div id="live-price"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provably Fair Dice Game</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="google-adsense-account" content="ca-pub-5929163134423712">
+</head>
+<body>
+    <h1>Provably Fair Dice Game</h1>
+    <nav>
+        <a href="./index.html">Home</a> |
+        <a href="./dice-game.html">Dice Game</a> |
+        <a href="./calculator.html">Calculator</a>
+    </nav>
+    <input type="number" id="guess" placeholder="Guess a number (1-6)" min="1" max="6">
+    <button id="rollButton">Roll Dice</button>
+    <p id="result"></p>
+    <p id="proof"></p>
+    <p id="reward-message"></p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="./js/dice.js"></script>
+</body>
+</html>

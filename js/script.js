@@ -38,7 +38,19 @@ async function calculate() {
 }
 
 function claimReward() {
+    const lastClaimTime = localStorage.getItem('lastClaimTime');
+    const currentTime = new Date().getTime();
+
+    if (lastClaimTime && currentTime - lastClaimTime < 2.4 * 60 * 60 * 1000) {
+        const timeLeft = Math.ceil((2.4 * 60 * 60 * 1000 - (currentTime - lastClaimTime)) / (1000 * 60 * 60));
+        document.getElementById('reward-message').innerText = `You can only claim a reward once every 2.4 hours. Please wait ${timeLeft} hours.`;
+        return;
+    }
+
     document.getElementById('reward-message').innerText = 'You have claimed 100 satoshis!';
+
+    // Store the current claim time in local storage
+    localStorage.setItem('lastClaimTime', currentTime);
 }
 
 // Update live price on page load
